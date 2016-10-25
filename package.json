@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "$(npm bin)/babel src --out-dir lib"
+    "postinstall": "postinstall-build na \"npm run build-lib\""
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/jwhitmarsh/postinstall-test#readme",
   "dependancies": {
-    "babel": "6.5.2",
     "babel-cli": "6.18.0"
+  },
+  "dependencies": {
+    "postinstall-build": "2.1.3"
   }
 }
