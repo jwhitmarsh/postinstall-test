@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "postinstall-build na \"npm run build-lib\""
+    "build": "babel src --out-dir lib",
+    "postinstall": "postinstall-build na \"npm run build\""
   },
   "repository": {
     "type": "git",
